@@ -1,0 +1,15 @@
+.inner-nav {
+    ul {
+        li {
+            a {
+                &.active {
+                    color: #777;
+                }
+
+                &.active-link {
+                    color: #000;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+<!-- Section -->
+<div class="container">
+    <section class="page-section bg-scroll bg-dark-alfa-30" [style.background-image]="'url(./assets/images/backs/contact.jpg)'">
+        <div class="relative align-center">
+            
+            <h1 class="hs-line-11 font-alt mb-0">Contacto</h1>
+            
+            <div class="mod-breadcrumbs align-center font-alt">
+                <a href="/">Inicio</a>&nbsp;/&nbsp;<span>Contacto</span>
+            </div>
+            
+        </div>
+    </section>
+</div>
+<!-- End Section -->
+
+<app-contact></app-contact>
+
+<!-- Contact Section -->
+<section class="page-section pt-70 pt-xs-40">
+    <div class="container relative">
+        
+        <div class="row">
+            
+            <div class="col-sm-6 mb-xs-40">
+                <!-- Google Map -->
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d900.4303092084192!2d-100.9672695740491!3d25.480982185099666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868812da24321699%3A0x7b967b5e484cd97!2sCalle%20Peras%20244%2C%20Rinc%C3%B3n%20de%20Sayavedra%2C%2025200%20Saltillo%2C%20Coah.!5e0!3m2!1sen!2smx!4v1621310074293!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24572.368311964965!2d-75.602613!3d39.65993!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c703f3d191cf13%3A0xf4674106f987fe3a!2zMjQ1IFF1aWdsZXkgQmx2ZCBTdGUgSywgTmV3IENhc3RsZSwgREUgMTk3MjAsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1584450290276!5m2!1suk!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe> -->
+                </div>
+                <!-- End Google Map -->
+            </div>
+            
+            <div class="col-sm-6">
+                
+                <form class="form contact-form" id="contact_form">
+                    <div class="clearfix">
+                        
+                        <!-- Name -->
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" class="input-md round form-control" placeholder="Nombre" pattern=".{3,100}" required aria-required="true">
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="input-md round form-control" placeholder="Email" pattern=".{5,100}" required aria-required="true">
+                        </div>
+                        
+                        <!-- Message -->
+                        <div class="form-group">
+                            <textarea name="message" id="message" class="input-md round form-control" style="height: 250px;" placeholder="Mensaje"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="clearfix">
+                        
+                        <div class="cf-left-col">
+                            <!-- Inform Tip -->
+                            <div class="form-tip pt-20">
+                                <i class="fa fa-info-circle"></i>
+                                Todos los campos son requeridos
+                            </div>
+                        </div>
+                        
+                        <div class="cf-right-col">
+                            <!-- Send Button -->
+                            <div class="align-right pt-10">
+                                <button class="submit_btn btn btn-mod btn-medium btn-round" id="submit_btn">Enviar</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="result" role="region" aria-live="polite" aria-atomic="true"></div>
+                    
+                </form>
+                
+            </div>
+            
+        </div>
+    
+    </div>
+</section>
+<!-- End Contact Section -->
