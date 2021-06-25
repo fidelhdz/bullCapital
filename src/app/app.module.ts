@@ -15,28 +15,30 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { PoliticasDePrivacidadComponent } from './politicas-de-privacidad/politicas-de-privacidad.component';
 import { EmpleosComponent } from './empleos/empleos.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    TestimonialsComponent,
-    ContactComponent,
-    WeOfferComponent,
-    HomeComponent,
-    PortadaComponent,
-    BullcapitalComponent,
-    ServiciosComponent,
-    ContactoComponent,
-    PoliticasDePrivacidadComponent,
-    EmpleosComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        TestimonialsComponent,
+        ContactComponent,
+        WeOfferComponent,
+        HomeComponent,
+        PortadaComponent,
+        BullcapitalComponent,
+        ServiciosComponent,
+        ContactoComponent,
+        PoliticasDePrivacidadComponent,
+        EmpleosComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        CarouselModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
